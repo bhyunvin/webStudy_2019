@@ -33,9 +33,7 @@
       }
       #lol_link ul {
         list-style : none;
-        border-right : 5px black solid;
-        border-bottom : 5px black solid;
-        border-left : 5px black solid;
+        border : 5px black solid;
         width : 250px;
         margin : 0px;
         padding-top : 10px;
@@ -51,20 +49,18 @@
       .no_circle {
         list-style : none;
       }
+      div br {
+        font-size : 20px;
+        font-family : Sans-Serif, "산세리프";
+        line-height : 40px;
+      }
+      #article {
+        text-align : center;
+        padding-top : 10px;
+      }
       #grid {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    width : 300px;
-    margin : 0px;
-      }
-      #grid #article {
-        padding-left:45px;
-        text-align:center;
-      }
-      @media{
-        #grid {
-      display:block;
-        }
+        display : grid;
+        grid-template-columns : 310px 1fr;
       }
     </style>
   </head>
@@ -82,6 +78,15 @@
  <li class="no_circle">나이와 가나다 순으로<br>정렬되었습니다.</li>
 </ul>
 </div>
+<div id="article">
+  <strong>
+  안녕하세요 이곳은 단톡방에서 같이 롤할사람을 구하는 곳이에요!<br>
+  단톡으로 하면되는데 왜 이런 페이지를 만들었냐구요? 저도 몰라요!<br>
+  사용하지 마세요! ㅋㅋㅋㅋㅋㅋㅋㅋ<br>
+  <img src="20190519lolparty.png" title="2019년 5월 19일~20일의 4인큐 롤 파티였습니다"><br>
+  오늘은 3승 3패로 마무리했네요. 꿀맛같은꿀열매, 애옹이 렝가, 커피마시는피카츄, 미 남 박 투 신 의 4인큐 롤파티였습니다.
+</strong>
+</div>
 <div id="lol_link">
 <ul>
   <li><a href="https://leagueoflegends.co.kr/" title="리그 오브 레전드 공식 홈페이지로 이동합니다." target="_blank">롤 공식 홈페이지</a></li>
@@ -91,11 +96,38 @@
   <li><a href="http://lol.inven.co.kr/" title="리그 오브 레전드 인벤 페이지로 이동합니다." target="_blank">롤 인벤</a></li>
 </ul>
 </div>
-<div id="article">
-<p>
-  안녕하세요 이곳은 아마도 본문입니다.. 왜 아래로 가는거야 슈1발 일단 댓글이랑 채팅부터 구현할까
-</p>
 </div>
-</div>
-  </body>
+<div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://leagueoflegendsenjoy.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5cdd2e84d07d7e0c6393e34b/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
 </html>
