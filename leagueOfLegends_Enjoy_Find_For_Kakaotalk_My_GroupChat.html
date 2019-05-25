@@ -62,7 +62,50 @@
         display : grid;
         grid-template-columns : 310px 1fr;
       }
+      #night_day {
+        padding : 32px 20px;
+        text-align : center;
+      }
     </style>
+    <script>
+    function setColor(color) {
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+      alist[i].style.color = color;
+      i = i + 1;
+      }
+    }
+    /*function setPaddingColor(paddingColor) {
+      var paddingList = document.querySelectorAll('padding');
+      var i = 0;
+      while (i < paddingList.length) {
+        paddingList[i].style.color = paddingColor;
+        i = i + 1;
+      }
+    }*/
+      function nightDayHandler(self){
+        var target = document.querySelector('body');
+        var target2 = document.querySelectorAll('padding');
+        if(self.value === '야간모드') {
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        self.value = '주간모드';
+
+
+        setColor(color);
+        //setPaddingColor(paddingColor);
+
+        } else {
+          target.style.backgroundColor = 'white';
+          target.style.color = 'black';
+          self.value = '야간모드';
+
+        setColor(color);
+        //setPaddingColor(paddingColor);
+        }
+      }
+    </script>
   </head>
   <body>
     <h1>롤 허쉴분? ^^7</h1>
@@ -79,6 +122,26 @@
 </ul>
 </div>
 <div id="article">
+  <input id="night_day" type="button" value="야간모드" onclick="
+  var target = document.querySelector('body');
+  if(this.value === '야간모드') {
+  target.style.backgroundColor = 'black';
+  target.style.color = 'white';
+  this.value = '주간모드';
+
+  setColor('powderblue');
+
+
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = '야간모드';
+
+  setColor('green');
+  
+
+  }
+  "><br><br>
   <strong>
   안녕하세요 이곳은 단톡방에서 같이 롤할사람을 구하는 곳이에요!<br>
   단톡으로 하면되는데 왜 이런 페이지를 만들었냐구요? 저도 몰라요!<br>
