@@ -1,21 +1,53 @@
 <!doctype html>
 <html>
 <head>
-<title>Studying CSS</title>
-<meta charset="UTF-8">
+  <title>WEB1 - JavaScript</title>
+  <meta charset="utf-8">
+  <script src="colors.js">  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 </head> <!--본문을 설명하는 태그를 의미하는 태그-->
 <body>
+<h1><a href="2019-index.html">Hello Web</h1></a>
+<input id="night_day" type="button" value="야간모드" onclick="
+    nightDayHandler(this);
+  ">
+<!--
+<input id="night_day" type="button" value="야간모드" onclick="
+var target = document.querySelector('body');
+if(this.value === '야간모드') {
+target.style.backgroundColor = 'black';
+target.style.color = 'white';
+this.value = '주간모드';
+
+var alist = document.querySelectorAll('a');
+var i = 0;
+while (i < alist.length) {
+alist[i].style.color = 'powderblue';
+i = i + 1;
+}
+} else {
+  target.style.backgroundColor = 'white';
+  target.style.color = 'black';
+  this.value = '야간모드';
+
+  var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length) {
+          alist[i].style.color = 'blue';
+          i = i + 1;
+        }
+}
+">
+-->
 <ol>
   <li><a href="2019-1.html">HTML</li></a>
   <li><a href="2019-2.html">CSS</li></a>
   <li><a href="2019-3.html">JavaScript</li></a>
 </ol> <!--ordered list / 순서가 있는 리스트-->
-<ul>
-  <li>bhyunvin</li>
-  <li>baekjonghyun</li>
-</ul> <!--unordered list / 순서가 없는 리스트-->
-<h1><a href="2019-index.html">Hello Web</h1></a>
-<p style="margin-top : 80px;">안녕하세요 이 페이지는 JavaScript를 설명하는 페이지입니다.</p>
+<!--unordered list / 순서가 없는 리스트-->
+<p style="margin-top : 60px;">안녕하세요 이 페이지는 JavaScript를 설명하는 페이지입니다.</p>
 <p>안녕하세요~</p>
 <!--속성은 순서 상관이없다-->
 </body> <!--html 본문을 설명하는 태그-->

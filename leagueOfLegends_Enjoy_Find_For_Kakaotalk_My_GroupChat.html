@@ -3,109 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>롤할사람 구해요^^7</title>
-    <style>
-      h1 {
-        text-align : center;
-        margin : 0px;
-        border-bottom : 5px black solid;
-        padding : 50px;
-        font-size : 50px;
-      }
-      #list {
-        width : 300px;
-      }
-      #list ul {
-        border-right : 5px black solid;
-        border-bottom : 5px black solid;
-        border-left : 5px black solid;
-        width : 250px;
-        margin : 0px;
-        padding-top : 20px;
-        font-size : 20px;
-        line-height : 50px;
-      }
-      #list a {
-        text-decoration : none;
-        color : green;
-      }
-      #lol_link {
-        width : 300px;
-      }
-      #lol_link ul {
-        list-style : none;
-        border : 5px black solid;
-        width : 250px;
-        margin : 0px;
-        padding-top : 10px;
-        padding-left : 20px;
-        padding-right : 20px;
-        font-size : 20px;
-        line-height : 50px;
-      }
-      #lol_link a {
-        text-decoration : none;
-        color : green;
-      }
-      .no_circle {
-        list-style : none;
-      }
-      div br {
-        font-size : 20px;
-        font-family : Sans-Serif, "산세리프";
-        line-height : 40px;
-      }
-      #article {
-        text-align : center;
-        padding-top : 10px;
-      }
-      #grid {
-        display : grid;
-        grid-template-columns : 310px 1fr;
-      }
-      #night_day {
-        padding : 32px 20px;
-        text-align : center;
-      }
-    </style>
-    <script>
-    function setColor(color) {
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while (i < alist.length) {
-      alist[i].style.color = color;
-      i = i + 1;
-      }
-    }
-    /*function setPaddingColor(paddingColor) {
-      var paddingList = document.querySelectorAll('padding');
-      var i = 0;
-      while (i < paddingList.length) {
-        paddingList[i].style.color = paddingColor;
-        i = i + 1;
-      }
-    }*/
-      function nightDayHandler(self){
-        var target = document.querySelector('body');
-        var target2 = document.querySelectorAll('padding');
-        if(self.value === '야간모드') {
-        target.style.backgroundColor = 'black';
-        target.style.color = 'white';
-        self.value = '주간모드';
-
-
-        setColor(color);
-        //setPaddingColor(paddingColor);
-
-        } else {
-          target.style.backgroundColor = 'white';
-          target.style.color = 'black';
-          self.value = '야간모드';
-
-        setColor(color);
-        //setPaddingColor(paddingColor);
-        }
-      }
-    </script>
+    <script src="colors.js"> </script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>롤 허쉴분? ^^7</h1>
@@ -123,25 +22,8 @@
 </div>
 <div id="article">
   <input id="night_day" type="button" value="야간모드" onclick="
-  var target = document.querySelector('body');
-  if(this.value === '야간모드') {
-  target.style.backgroundColor = 'black';
-  target.style.color = 'white';
-  this.value = '주간모드';
-
-  setColor('powderblue');
-
-
-  } else {
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';
-    this.value = '야간모드';
-
-  setColor('green');
-  
-
-  }
-  "><br><br>
+      nightDayHandler(this);
+    "><br><br>
   <strong>
   안녕하세요 이곳은 단톡방에서 같이 롤할사람을 구하는 곳이에요!<br>
   단톡으로 하면되는데 왜 이런 페이지를 만들었냐구요? 저도 몰라요!<br>

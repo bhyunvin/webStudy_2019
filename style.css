@@ -1,39 +1,62 @@
-body {
-  margin:0px;
+h1 {
+  text-align : center;
+  margin : 0px;
+  border-bottom : 5px black solid;
+  padding : 50px;
+  font-size : 50px;
 }
-  a {
-    color:black;
-    text-decoration: none;
-  }
-  h1 {
-    font-size:90px;
-    text-align: center;
-    border-bottom:1px solid gray;
-    margin:0px;
-    padding:30px;
-  }
-  #grid ol {
-    border-right:1px solid gray;
-    width:150px;
-    margin:0px;
-    padding-left:32px;
-  }
-  #grid {
-display:grid;
-grid-template-columns:150px 1fr;
-  }
-  #grid #article {
-    padding-left:45px;
-    text-align:center;
-  }
-  @media(max-width:800px){
-    #grid {
-  display:block;
-    }
-    #grid ol {
-      border-right:none;
-    }
-    h1 {
-      border:none;
-    }
-  }
+#list {
+  width : 300px;
+}
+#list ul {
+  border-right : 5px black solid;
+  border-bottom : 5px black solid;
+  border-left : 5px black solid;
+  width : 250px;
+  margin : 0px;
+  padding-top : 20px;
+  font-size : 20px;
+  line-height : 50px;
+}
+#list a {
+  text-decoration : none;
+  color : green;
+}
+#lol_link {
+  width : 300px;
+}
+#lol_link ul {
+  list-style : none;
+  border : 5px black solid;
+  width : 250px;
+  margin : 0px;
+  padding-top : 10px;
+  padding-left : 20px;
+  padding-right : 20px;
+  font-size : 20px;
+  line-height : 50px;
+}
+#lol_link a {
+  text-decoration : none;
+  color : green;
+}
+.no_circle {
+  list-style : none;
+}
+div br {
+  font-size : 20px;
+  font-family : Sans-Serif, "산세리프";
+  line-height : 40px;
+}
+#article {
+  text-align : center;
+  padding-top : 10px;
+}
+#grid {
+  display : grid;
+  grid-template-columns : 310px 1fr;
+}
+#night_day {
+  padding : 32px 20px;
+  text-align : center;
+}
